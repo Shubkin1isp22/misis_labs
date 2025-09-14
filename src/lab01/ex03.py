@@ -1,0 +1,8 @@
+price = float(input("Цена: "))
+discount = float(input("Скидка: "))
+vat = float(input("НДС: "))
+base = price * (1 - discount/100)
+vat_price = base * (vat/100)
+print(f"База после скидки: {base:.2f} ₽")
+print(f"НДС: {vat_price:.2f} ₽")
+print(f"Итого к оплате: {base + vat_price:.2f} ₽")
