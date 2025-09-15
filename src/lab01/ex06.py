@@ -1,10 +1,6 @@
 N = int(input("in_1: "))
 ochn = 0
 zaochn = 0
-switch_case = {
-    "False": ochn,
-    "True" : zaochn
-}
 for i in range(N):
     s = input(f"in_{i+2}: ").split()
     if s[3] == "True":
